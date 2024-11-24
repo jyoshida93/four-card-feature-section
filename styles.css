@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-Light-Gray);
+  font-family: "Poppins", sans-serif;
+}
+
+content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+h3 {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 3em 1.2em 0 1.2em;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin-bottom: 2em;
+}
+
+.hero-first-line {
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+}
+
+.hero-second-line {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+
+.four-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border-radius: 7px;
+  padding: 1.2em;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.middle-two-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.supervisor-card {
+  margin-bottom: 1.5rem;
+  border-top: 3px solid var(--Cyan);
+  width: 100%;
+}
+
+.team-builder-card {
+  margin-bottom: 1.5rem;
+  border-top: 3px solid var(--Red);
+}
+
+.karma-card {
+  margin-bottom: 1.5rem;
+  border-top: 3px solid var(--Orange);
+}
+
+.calculator-card {
+  border-top: 3px solid var(--Blue);
+}
+
+.four-card-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--Very-Dark-Blue);
+}
+
+.four-card-text {
+  margin-top: 0.4em;
+  margin-bottom: 2.5em;
+  color: var(--Grayish-Blue);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: end;
+  margin: 0 1em 1em 0;
+}
+
+@media screen and (min-width: 799px) {
+  .four-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-two-cards {
+    margin: 0 1.5em;
+  }
+
+  .card-width {
+    width: 33%;
+  }
+}
